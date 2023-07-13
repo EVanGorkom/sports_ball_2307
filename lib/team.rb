@@ -7,9 +7,6 @@ class Team
     def initialize(team_name, home_city)
         @team_name = team_name
         @home_city = home_city
-    end
-
-    def roster
         @roster = []
     end
 
@@ -19,7 +16,6 @@ class Team
 
     def add_player(new_player)
         @roster << new_player
-        require 'pry';binding.pry
     end
 
 end

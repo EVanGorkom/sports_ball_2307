@@ -28,8 +28,8 @@ RSpec.describe Team do
         team.add_player(player_1)
         team.add_player(player_2)
 
-        expect(team.roster).to eq([])
-
+        expect(team.roster).to eq([player_1, player_2])
+        expect(team.player_count).to eq(2)
     end
 
 end
