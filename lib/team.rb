@@ -18,5 +18,5 @@ class Team
         @roster << new_player
     end
 
-    
+
 end 

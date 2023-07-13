@@ -46,7 +46,10 @@ RSpec.describe Player do
 
   it 'has a nickname that can be set' do
     player = Player.new("Michael Palledorous" , 1000000, 36)
-    player.nickname_set("Squints")
+
+    expect(player.nickname).to eq(nil) # still need to keep and SHOW the nil test to showcase the variable failing and then being reassigned
+
+    player.set_nickname!("Squints")
     
     expect(player.nickname).to eq("Squints")
   end

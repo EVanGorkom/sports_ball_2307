@@ -8,11 +8,11 @@ class Player
     end
 
     def first_name
-        first_name = @name.split.first
+        first_name = @name.split.first # the first_name string variable is unnecessary. we could have just used @name.split.first since @name is a variable accessible throughout the class.
     end
 
     def last_name
-        last_name = @name.split.last
+        last_name = @name.split.last # see above for notes
     end
 
     def total_cost
@@ -23,7 +23,7 @@ class Player
         @nickname
     end
 
-    def nickname_set(nickname)
+    def set_nickname!(nickname) #the method is written incorrectly in reference to the README doc. 
         @nickname = nickname
     end
 end 
