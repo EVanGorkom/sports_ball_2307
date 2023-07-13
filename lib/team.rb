@@ -11,4 +11,8 @@ class Team
         roster = []
     end
 
+    def player_count
+        roster.length
+    end
+
 end
